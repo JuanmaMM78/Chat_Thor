@@ -1,0 +1,21 @@
+extends layout.pug
+block content
+    .header
+        h1 Bienvenido al chat
+        h2 Usuarios conectados: <span id="numUsuarios"></span>
+    .main 
+        ul#mensajes
+            each mensaje in mensajes
+                li <strong>#{mensaje.nombre}:</strong> #{mensaje.mensaje}
+    .footer
+        .control    
+            label.form-label Nombre 
+            input#inputNombre.form-control(type="text")
+        .control    
+            label.form-label Mensaje
+            input#inputMensaje.form-control(type="text")
+        .control 
+            button#btnEnviar.btn.btn-success Enviar
+
+    script(src="/javascripts/cliente-chat.js") 
+        

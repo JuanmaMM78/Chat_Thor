@@ -1,0 +1,42 @@
+
+.header {
+  height: 10vh;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  flex-direction: column;
+}
+.main {
+  height: 75vh;
+  padding: 30px;
+  overflow: scroll;
+}
+
+.main ul {
+  list-style: none;
+}
+
+li.propietario {
+  color: lightblue;
+}
+
+.footer {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 30px;
+  background-color: lightblue;
+}
+
+.footer .control {
+  width: 33%;
+}
+
+.footer .control:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
